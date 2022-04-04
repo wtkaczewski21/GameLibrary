@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+}
+:root {
+  --main-color: #63c3a3;
+  --dark-color: #202336;
+  --light-color: #0a6480;
+  --text-color: rgb(225, 225, 225);
+}
+::selection {
+  color: var(--text-color);
+  background: var(--main-color);
+}
+section {
+  padding: 4rem 0 3rem;
+}
+img {
+  width: 100%;
+}
+body {
+  color: var(--text-color);
+  background: var(--dark-color);
+}
+.container {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--dark-color);
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.logo span {
+  color: var(--main-color);
+}
+.nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 20px;
+  align-items: center;
+}
+.nav-links ul {
+  display: flex;
+}
+.nav-links a {
+  color: var(--text-color);
+  display: block;
+  padding: 0 15px 0 15px;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  background: #3f4569;
+}
+.home {
+  position: relative;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5rem;
+}
+.home img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.4rem;
+  z-index: -1;
+}
+.home-text {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+.btn {
+  background: var(--light-color);
+  padding: 15px 20px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  clip-path: polygon(0% 0%, 90% 0, 100% 32%, 100% 100%, 0% 100%);
+}
+.btn:hover {
+  background: var(--main-color);
+  transition: 0.3s all linear;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.heading .bx {
+  font-size: 21px;
+  color: var(--text-color);
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 5rem;
+}
+.heading h2 {
+  font-size: 1.2rem;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 0.5rem;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.box .box-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: hsl(227, 14%, 20%, 0.8);
+  backdrop-filter: blur(3px);
+  border-radius: 0.5rem;
+}
+.box .box-text h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box .box-text h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+/* New Games */
+.new-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1.2rem;
+}
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.view-all a {
+  background: var(--light-color);
+  padding: 12px 20px;
+  color: var(--text-color);
+  letter-spacing: 1px;
+}
+.view-all a:hover {
+  background: var(--main-color);
+  transition: 0.3s all linear;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Games List */
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.2rem;
+}
+.box-list {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+}
+.box-list a {
+  color: var(--text-color);
+}
+.box-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.box-list .box-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(55, 120, 100, 0.8);
+  backdrop-filter: blur(3px);
+  border-radius: 2rem;
+  text-align: center;
+}
+.box-list .box-text h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box-list .box-text h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
